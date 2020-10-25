@@ -16,10 +16,16 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
-
+const numToString = (a) => {
+  a = toString(a)
+}
 
 // Write a JavaScript program to convert a string to the number.
+const numToString = (a) => {
+  return a.toString()
+}
 
+console.log(numToString(432))
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -29,22 +35,43 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
+
+const whatType = (input) => {
+    return typeof input
+}
+
+whatType('dog')
   
 
   
 // Write a JavaScript program that adds 2 numbers together.
 
+const whatType = (input) => typeof input
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-
+const cuteDog = () => {
+  if (animal === dog && cute === true) {
+    return 'dog is cute'
+  }
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const cuteAnimal = () {
+  if (animal === cuteDog || animal === cuteCat) {
+    return 'animal is cute'
+  }
+}
 
+// Write a JavaScript program that runs when both things are not true.
 
-// Write a JavaScript program that runs when both things are not true.  
+const notCuteAnimal = () {
+  if (animal !== cuteDog && animal !== cuteCat) {
+    return 'animal not is cute'
+  }
+}
 
 // ***************************
 //         PART TWO
