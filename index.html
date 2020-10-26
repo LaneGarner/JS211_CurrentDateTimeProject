@@ -2,14 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <title>Date and Time (and more)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" ></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Hi there</h1>
     <hr/>
+    
+    
+    <button onclick="displayDate()">Display current date and time</button>
     <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
     <hr/>
+    
+    
+    <input type="number" placeholder="Enter a number" id="numEntered">
+    <button onclick="numToString()">Convert to string</button>
+    <div id="display-string"></div>
+    <hr/>
+    
+    
+    <input type="text" placeholder="Enter a number" id="stringEntered">
+    <button onclick="stringToNum()">Convert to number</button>
+    <div id="display-num"></div>
+    <hr/>
+    
+    
+    <input type="text" placeholder="Enter something" id="somethingEntered">
+    <button onclick="whatType()">Show type</button>
+    <div id="displayType"></div>
+    <hr/>
+    
+    
+    <input type="number" placeholder="Enter a number" id="num1">
+    <input type="number" placeholder="Enter another number" id="num2">
+    <button onclick="addTheseNums()">Add these numbers</button>
+    <div id="displaySum"></div>
+    <hr>
+
+    <p class="radio-heading">Select an animal:</p>
+    <div>
+      <input type="radio" id="dog" name="animal" value="dog"
+            checked>
+      <label for="dog">Dog</label>
+    </div>
+    <div>
+      <input type="radio" id="cat" name="animal" value="cat">
+      <label for="cat">Cat</label>
+    </div>
+    <div>
+      <input type="radio" id="horse" name="animal" value="horse">
+      <label for="horse">Horse</label>
+    </div>
+    <p class="radio-heading">Select one:</p>
+    <div>
+      <input type="radio" id="cute" name="cuteNotCute" value="cute"
+            checked>
+      <label for="cute">Cute</label>
+    </div>
+    <div>
+      <input type="radio" id="notCute" name="cuteNotCute" value="notCute">
+      <label for="notCute">Not cute</label>
+    </div>
+
+    <button onclick="calculateCuteness()">Calculate cuteness</button>
+    <!-- <button onclick="cuteDog()">Calculate cuteness</button> -->
+    <div id="displayCuteness"></div>
+    
   </body>
 </html>
